@@ -1,0 +1,4 @@
+<!-- <h1> {{'Server'}} with ID {{ serverID}} is {{ (serverID ==10 ? serverStatusOff : serverStatusOn)}} </h1> -->
+<p [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus ==='online'}"
+> {{'Server'}} with ID {{ serverID }} is {{ getServerStatus() }} </p>
